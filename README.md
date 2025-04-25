@@ -44,13 +44,7 @@ Elle est composée de deux parties :
    npm install
    ```
 
-3. Crée un fichier `.env` à la racine du projet backend et configure les variables d'environnement nécessaires :
-
-   ```bash
-   MONGO_URI=<votre_url_mongodb>
-   ```
-
-4. Lancer le serveur :
+3. Lancer le serveur :
    ```bash
    npm start
    ```
@@ -63,8 +57,8 @@ Elle est composée de deux parties :
 1. Clone le dépôt :
 
    ```bash
-   git clone <URL_DU_REPO>
-   cd <dossier_frontend>
+   git clone https://github.com/alcyaKI/student-web-service
+   cd student-service-frontend
    ```
 
 2. Installe les dépendances :
@@ -77,7 +71,7 @@ Elle est composée de deux parties :
    ```bash
    npm start
    ```
-   L'application React.js sera accessible à `http://localhost:5175`.
+   L'application React.js sera accessible à `http://localhost:5173`.
 
 ---
 
@@ -93,4 +87,22 @@ backend/
 │   └── etudiants.js        # Routes API pour gérer les étudiants
 ├── app.js                  # Initialisation de l'application Express
 └── .env                    # Variables d'environnement (MongoDB URI)
+```
+
+### Fontend
+
+```bash
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── AddEtudiantForm.tsx  # Formulaire pour ajouter un étudiant
+│   │   └── EtudiantsList.tsx    # Liste des étudiants
+│   ├── services/
+│   │   └── api.ts              # Service pour interagir avec l'API
+│   ├── models/
+│   │   └── Etudiant.ts          # Interface TypeScript pour un étudiant
+│   ├── App.tsx                 # Composant principal
+│   └── index.tsx               # Point d'entrée de l'application React
+├── tailwind.config.js         # Configuration Tailwind CSS
+└── tsconfig.json              # Configuration TypeScript
 ```
